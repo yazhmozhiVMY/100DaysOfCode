@@ -17,12 +17,12 @@ Explanation: Factorial of 20 is 2432902008176640000 which has 4 trailing zeroes.
 
 Input: n = 100
 Output: 24
-Constraints:
+### Constraints:
 
-0 <= n <= 104
+**0 <= n <= 104**
  
-
-Follow up: Could you write a solution that works in logarithmic time complexity?
+### Follow up: 
+Could you write a solution that works in **logarithmic time complexity?**
 ### Reference 
 https://algo.monster/liteproblems/172
 
