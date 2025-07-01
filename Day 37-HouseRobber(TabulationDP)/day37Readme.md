@@ -1,11 +1,11 @@
-# 🏠 House Robber Problem – Day 37
+#  House Robber Problem – Day 37
 
-## 📘 Problem Statement
+##  Problem Statement
 Given an array of integers `nums`, where each element represents the amount of money in a house, determine the maximum amount of money you can rob **without robbing two adjacent houses**.
 
 ---
 
-## 📊 Approaches Covered
+##  Approaches Covered
 
 ### 1. Tabulation (Bottom-Up DP)
 We use a DP array where each index `i` represents the maximum money that can be robbed from the first `i+1` houses.
@@ -79,12 +79,13 @@ def rob(nums):
 
 ---
 
-## 💡 Insight
+## Insight
+
 By analyzing the recurrence in the DP array, we realize each state depends only on the previous two states. Thus, we can reduce the space complexity from **O(n)** to **O(1)** using two variables.
 
 ---
 
-## 📌 Summary
+## Summary
 
 | Approach            | Time Complexity | Space Complexity |
 |---------------------|------------------|-------------------|
