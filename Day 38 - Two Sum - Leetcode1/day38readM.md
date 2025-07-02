@@ -3,7 +3,7 @@
 ## 🔗 Problem Link
 [LeetCode #1 - Two Sum] (https://leetcode.com/problems/two-sum/description/)
 
-## 🧠 Problem Statement
+## Problem Statement
 
 Given an array of integers `nums` and an integer `target`, return the **indices** of the two numbers such that they add up to `target`.
 
