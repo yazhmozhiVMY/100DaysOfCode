@@ -28,6 +28,12 @@ To solve this in **O(n)** time instead of O(n²), we use a **hash map** (diction
 
 ---
 
+## Time and spac
+Time	O(n) — One pass through the list
+Space	O(n) — For the hash map
+
+---
+
 ## Solution (Python)
 
 ```python
@@ -47,8 +53,3 @@ class Solution(object):
         else:
             return []
 
----
-
-## Time and spac
-Time	O(n) — One pass through the list
-Space	O(n) — For the hash map
