@@ -46,3 +46,9 @@ class Solution(object):
             numIndexDict[num]=index
         else:
             return []
+
+---
+
+## Time and spac
+Time	O(n) — One pass through the list
+Space	O(n) — For the hash map
