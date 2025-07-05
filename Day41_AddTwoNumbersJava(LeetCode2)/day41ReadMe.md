@@ -29,7 +29,7 @@ Add the two numbers and return the sum as a linked list in the same reversed for
 
 ---
 
-## 🧪 Examples
+## Examples
 
 ### Example 1:
 
@@ -54,9 +54,7 @@ Output:
 
 ---
 
----
-
-## 🧠 Time and Space Complexity
+## Time and Space Complexity
 
 | Metric     | Value                     |
 |------------|---------------------------|
