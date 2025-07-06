@@ -96,7 +96,7 @@ Visual:
 - lengthOfLongestSubstring_best(String s) - method 2 using int[128]
 ---
 
-## 🏁 Output Example
+##  Output Example
 
 Input: `"abcabcbb"`  
 Output: `3`  
