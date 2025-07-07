@@ -29,6 +29,7 @@ Length of number n digits (due to string conversion and scanning)
 
 ### Space Complexity: O(n)
 Uses a string representation of the number
+
 ---
 ## Approach 2: Reverse Integer and check
 
@@ -42,3 +43,7 @@ Only half the digits are processed
 
 ### Space Complexity: O(1)
 Uses just a few integer variables — very efficient
+
+
+## LeetCode Submission
+![Screenshot 2025-07-07 at 12 38 21 PM](https://github.com/user-attachments/assets/dae54b71-7c31-4626-ad28-1e32f97a3ed3)
