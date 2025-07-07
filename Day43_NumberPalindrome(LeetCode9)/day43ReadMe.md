@@ -1,49 +1,125 @@
 # LeetCode #9: Palindrome Number (Java)
 
-## Problem Link
-[LeetCode – Palindrome Number](https://leetcode.com/problems/palindrome-number/)
-
----
-
 ##  Problem Statement
 
-Determine whether an integer `x` is a **palindrome**.
+Determine whether an integer `x` is a **palindrome** — that is, it reads the same backward as forward.
 
-An integer is a palindrome when it **reads the same forward and backward**.
+### Constraints:
+- An integer is a palindrome when it reads the same backward as forward.
+- Negative numbers are **not** palindromes.
+- Any number ending in 0 is **not** a palindrome unless the number is 0 itself.
 
-## Constraints:
-- Must return `false` for negative numbers (e.g., `-121`)
-- Must return `false` for numbers ending in 0 (e.g., `10`), **except** for `0` itself
+---
+
+## Solutions Implemented
+
+### Method 1: Full Integer Reversal
+
+```java
+public boolean isPalindrome(int x) {
+    if (x < 0) return false;
+    int reverse = 0, temp = x;
+    while (temp > 0) {
+        reverse = reverse * 10 + temp % 10;
+        temp /= 10;
+    }
+    return reverse == x;
+}
+```
+
+####  Pros:
+- Simple, intuitive logic
+- Accepted in LeetCode
+
+#### ⚠ Cons:
+- Potential overflow if reversed integer exceeds `int` range
+
+####  Time Complexity: O(log₁₀ n)  
+####  Space Complexity: O(1)
+
+####  LeetCode Stats:
+- ⏱ Runtime: 5 ms (Beats 67.63%)
+- 💾 Memory: 44.10 MB (Beats 48.42%)
+
+![Submission_Method1](https://github.com/user-attachments/assets/19ee73a8-161e-4645-a358-6e0ccb243a2e)
+
 
 ---
 
-## Approach 1: Convert Integer to String
+###  Method 2: String Conversion (Not Accepted in LeetCode)
 
-### Algorithm
-1. Convert the integer to a string
-2. Use two-pointer technique to compare characters from both ends
+```java
+public boolean isPalindromeASstring(int x) {
+    if (x < 0) return false;
+    String s = Integer.toString(x);
+    for (int i = 0; i < s.length() / 2; i++) {
+        if (s.charAt(i) != s.charAt(s.length() - 1 - i)) return false;
+    }
+    return true;
+}
+```
 
+#### Pros:
+- Very easy to write and understand
+- Leverages built-in string operations
 
-### Time Complexity: O(n)
-Length of number n digits (due to string conversion and scanning)
+####  Cons:
+- Not memory-efficient
+- **Not accepted** in LeetCode due to constraint of avoiding string conversion
 
-### Space Complexity: O(n)
-Uses a string representation of the number
+#### Time Complexity: O(n)  
+#### Space Complexity: O(n)
 
 ---
-## Approach 2: Reverse Integer and check
 
-### Algorithm
-1. Reverse the integer using / and %
-2. Check if it is equal to the input
-3. Return false for -ve integers and numbers ending with 0
+###  Method 3: Reverse Half of the Number (Best)
 
-### Time Complexity: O(log₁₀(n))
-Only half the digits are processed
+```java
+public boolean isPalindrome_BEST(int x) {
+    if (x < 0 || (x % 10 == 0 && x != 0)) return false;
+    int reverse = 0;
+    while (x > reverse) {
+        reverse = reverse * 10 + x % 10;
+        x /= 10;
+    }
+    return x == reverse || x == reverse / 10;
+}
+```
 
-### Space Complexity: O(1)
-Uses just a few integer variables — very efficient
+#### Pros:
+- Avoids overflow
+- Processes only half the digits
+- Most efficient method
 
 
-## LeetCode Submission
-![Screenshot 2025-07-07 at 12 38 21 PM](https://github.com/user-attachments/assets/dae54b71-7c31-4626-ad28-1e32f97a3ed3)
+####  Time Complexity: O(log₁₀ n)  
+####  Space Complexity: O(1)
+
+####  LeetCode Stats:
+- ⏱ Runtime: 5 ms (Beats 67.63%)
+- 💾 Memory: 43.93 MB (Beats 76.33%)
+
+![BestSubmission_Method 3](https://github.com/user-attachments/assets/10e8d3f7-0714-418d-9778-55e73018da9e)
+
+---
+
+## Sample Output (All Three Methods)
+
+```java
+Input: 121 → true
+Input: -121 → false
+Input: 1214 → false
+```
+
+---
+
+## Conclusion
+
+- **Best Choice:** Method 3 (half-reversal)  
+- It's **safe from overflow**, memory-efficient, and fast
+
+---
+
+## Tags
+
+`Palindrome` `Integer Manipulation` `Math` `Java` `LeetCode` `Optimization`
