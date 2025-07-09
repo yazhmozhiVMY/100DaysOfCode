@@ -18,7 +18,7 @@ If there is no common prefix, return an empty string "".
 
 
 
-### ⏱️ Time Complexity:
+###  Time Complexity:
 - **O(n log n + m)**, where `n` is the number of strings and `m` is the length of the shortest string.
 
 ###  Space Complexity:
