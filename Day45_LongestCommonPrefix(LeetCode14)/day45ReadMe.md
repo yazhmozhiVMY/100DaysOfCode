@@ -37,21 +37,6 @@ If there is no common prefix, return an empty string "".
 2. Compare that character across all strings.
 3. If any mismatch is found, return the result till previous character.
 
-###  Code:
-```java
-public String longestCommonPrefix_Vertical(String[] strs) {
-    if (strs == null || strs.length == 0) return "";
-    for (int i = 0; i < strs[0].length(); i++) {
-        char c = strs[0].charAt(i);
-        for (int j = 1; j < strs.length; j++) {
-            if (i >= strs[j].length() || strs[j].charAt(i) != c) {
-                return strs[0].substring(0, i);
-            }
-        }
-    }
-    return strs[0];
-}
-```
 
 ###  Time Complexity:
 - **O(S)**, where `S` is the sum of all characters in all strings.
