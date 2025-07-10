@@ -83,6 +83,5 @@ Explanation: The container formed between height[1] and height[8] contains the m
 
 ---
 The first method exceeds time limit on LeetCode. 
-
-![Uploading BestMethod.png…]()
+<img width="791" height="473" alt="BestMethod" src="https://github.com/user-attachments/assets/5552d331-592f-43ad-bf20-2e8eb7d5c494" />
 
