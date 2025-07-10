@@ -82,3 +82,7 @@ Explanation: The container formed between height[1] and height[8] contains the m
 | Two Pointer    | O(n)             | O(1)             | Best for Interviews |
 
 ---
+The first method exceeds time limit on LeetCode. 
+
+![Uploading BestMethod.png…]()
+
