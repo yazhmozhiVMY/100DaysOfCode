@@ -108,15 +108,15 @@ Partitions:
 - `r2 = nums2[mid2] = nums2[3] = 6`
 
 Check:  
-- `l1 (1) <= r2 (6)` ✅  
-- `l2 (4) <= r1 (5)` ✅  
+- `l1 (1) <= r2 (6)`  
+- `l2 (4) <= r1 (5)` 
 → Valid partition found
 
 **Since total length is odd, median = max(l1, l2) = max(1, 4) = 4**
 
 ---
 
-## ✅ Median Found: **4**
+## Median Found: **4**
 
 This example shows that a valid partition was found in the **first iteration** and no further searching was needed.
 
