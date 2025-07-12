@@ -2,8 +2,8 @@
 /**
  * Write a description of class Solution here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Yazh
+ * @version 1.0
  */
 import java.util.Arrays;
 public class Solution
@@ -42,10 +42,17 @@ public class Solution
     }
     public double findMedianSortedArrays(int[] nums1, int[] nums2) 
     {
-        
         int n1 = nums1.length;
         int n2=nums2.length;
-        if(n2<n1) findMedianSortedArrays(nums2,nums1);
+        if (n1 == 0) 
+        {
+            return (n2 % 2 == 0) ? (nums2[n2 / 2] + nums2[n2 / 2 - 1]) / 2.0 : nums2[n2 / 2];
+        }
+        if (n2 == 0) 
+        {
+            return (n1 % 2 == 0) ? (nums1[n1 / 2] + nums1[n1 / 2 - 1]) / 2.0 : nums1[n1 / 2];
+        }
+        if(n2<n1) return findMedianSortedArrays(nums2,nums1);
         int begin1=0,end1=n1;
         while(begin1<=end1)
         {
