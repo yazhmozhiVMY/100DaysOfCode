@@ -10,7 +10,7 @@ This repository contains two efficient solutions for the classic problem of merg
 
 ---
 
-##  Approach 1: Using Min Heap (PriorityQueue)
+##  Approach 1: Using Min Heap (PriorityQueue) MergeKsortedLLs.java
 
 ###  Description
 
@@ -55,7 +55,7 @@ class Solution {
 
 ---
 
-##  Approach 2: Divide and Conquer
+##  Approach 2: Divide and Conquer (Solution.java)
 
 ###  Description
 
