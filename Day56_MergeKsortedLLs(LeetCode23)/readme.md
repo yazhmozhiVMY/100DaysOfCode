@@ -16,10 +16,10 @@ This repository contains two efficient solutions for the classic problem of merg
 
 This approach uses a **min-heap** (Java `PriorityQueue`) to keep track of the smallest current node from each list. At each step, we pop the smallest node and append it to the merged list.
 
-### 💡 Time Complexity
+###  Time Complexity
 - `O(N log k)`, where `N` is the total number of nodes and `k` is the number of lists.
 
-### 📦 Space Complexity
+###  Space Complexity
 - `O(k)` for the priority queue.
 
 ###  Code
