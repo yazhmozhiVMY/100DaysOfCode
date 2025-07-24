@@ -46,6 +46,3 @@ javac RemoveEltArray.java
 java RemoveEltArray
 ```
 
-## License
-
-This code is provided for educational purposes.
