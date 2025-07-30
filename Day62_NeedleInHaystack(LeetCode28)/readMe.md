@@ -124,3 +124,6 @@ Result: **-1**
 - Does not use built-in substring search.
 - Works in `O((n - m) * m)` worst-case time.
 - Returns `-1` if not found or `0` if needle is empty.
+
+<img width="819" height="615" alt="image" src="https://github.com/user-attachments/assets/41efd4c1-0fe4-4b0a-b4d0-bdd88f9fa4ca" />
+
