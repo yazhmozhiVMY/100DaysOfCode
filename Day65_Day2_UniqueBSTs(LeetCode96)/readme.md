@@ -4,6 +4,8 @@
 ## Problem Statement
 Given an integer `n`, return the number of structurally unique **Binary Search Trees (BSTs)** which have exactly `n` nodes of unique values from `1` to `n`.
 
+<img width="694" height="636" alt="image" src="https://github.com/user-attachments/assets/1d94491b-b794-4fcb-b506-bacaf743649e" />
+
 ---
 
 ## Algorithm Explanation
